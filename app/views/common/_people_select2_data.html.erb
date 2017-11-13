@@ -1,0 +1,9 @@
+<script type="text/javascript">
+  if (field_formats === undefined){
+    var field_formats = ['people']
+    var contact_filter_urls =  { 'people': "<%= autocomplete_for_manager_person_path(:id => 'new') %>" };
+  } else {
+    field_formats.push('people');
+    contact_filter_urls['people'] = "<%= autocomplete_for_manager_person_path(:id => 'new') %>";
+  }
+</script>
